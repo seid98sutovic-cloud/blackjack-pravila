@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLACK JACK COMMUNITY — Pravila zajednice i servera</title>
+  <meta name="description" content="Službena pravila Black Jack Community za Discord i in-game. 8 poglavlja, 70 numerisanih pravila — komunikacija, karakter, državne organizacije, pljačke, otmice i sankcije.">
+  <meta name="theme-color" content="#111B27">
+  <link rel="canonical" href="https://seid98sutovic-cloud.github.io/blackjack-pravila/">
+  <link rel="icon" href="bj_logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="bj_logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Black Jack Community">
+  <meta property="og:title" content="BLACK JACK COMMUNITY — Pravila zajednice i servera">
+  <meta property="og:description" content="Službena pravila Black Jack Community za Discord i in-game. 8 poglavlja, 70 numerisanih pravila — komunikacija, karakter, državne organizacije, pljačke, otmice i sankcije.">
+  <meta property="og:url" content="https://seid98sutovic-cloud.github.io/blackjack-pravila/">
+  <meta property="og:image" content="https://seid98sutovic-cloud.github.io/blackjack-pravila/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="bs_BA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BLACK JACK COMMUNITY — Pravila zajednice i servera">
+  <meta name="twitter:description" content="Službena pravila Black Jack Community za Discord i in-game. 8 poglavlja, 70 numerisanih pravila — komunikacija, karakter, državne organizacije, pljačke, otmice i sankcije.">
+  <meta name="twitter:image" content="https://seid98sutovic-cloud.github.io/blackjack-pravila/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --navy: #111B27;
+  --navy-2: #0b121b;
+  --navy-3: #0a1018;
+  --blue: #2B729E;
+  --blue-2: #3482B5;
+  --blue-soft: #9fc3dc;
+  --ink: #16202c;
+  --muted: #3b4b5c;
+  --line: #d5e2ec;
+  --paper: #ffffff;
+  --wash: #f2f7fb;
+  --ex: #eef5fa;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(17, 27, 39, .12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: #e8eef3;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--blue); }
+.skip {
+  position: absolute; left: -999px; top: 0;
+  background: var(--navy); color: #fff; padding: .6rem 1rem; z-index: 100;
+}
+.skip:focus { left: .5rem; top: .5rem; }
+
+/* HERO */
+.hero {
+  background: radial-gradient(ellipse at 50% 30%, #18324b 0%, var(--navy) 55%, var(--navy-3) 100%);
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.hero-banner {
+  position: relative;
+  height: min(42vw, 360px);
+  min-height: 180px;
+  overflow: hidden;
+  border-bottom: 5px solid var(--blue);
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.hero-banner::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(11,18,27,.15) 0%, rgba(11,18,27,.55) 100%);
+}
+.hero-inner {
+  padding: 0 1.25rem 3rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.hero-logo {
+  width: 128px; height: 128px;
+  margin-top: -64px;
+  border-radius: 50%;
+  border: 4px solid var(--blue-2);
+  box-shadow: 0 0 28px rgba(52,130,181,.8);
+  position: relative;
+  background: var(--navy);
+  object-fit: cover;
+}
+.kick {
+  margin: 1.1rem 0 0;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  color: var(--blue-2);
+  letter-spacing: .28em;
+  font-size: .78rem;
+  text-transform: uppercase;
+}
+.kick .dia { margin-right: .35rem; }
+.hero h1 {
+  font-family: Cinzel, Montserrat, serif;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4.2vw, 2.55rem);
+  letter-spacing: .06em;
+  margin: .45rem 0 0;
+  line-height: 1.2;
+}
+.hero h1 .sp { color: var(--blue-2); font-family: inherit; }
+.hero .subtitle {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  color: #cfe3f1;
+  margin: .35rem 0 0;
+  letter-spacing: .04em;
+}
+.hero .accent {
+  width: 140px; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--blue-2), transparent);
+  margin: 1.15rem auto 1.25rem;
+  border-radius: 2px;
+  position: relative;
+}
+.hero .lede, .hero .lede-2 {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #e5eef5;
+  margin: 0 0 .85rem;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.75rem;
+  margin: 1.5rem 0 1.35rem;
+  flex-wrap: wrap;
+}
+.stats div { display: flex; align-items: baseline; gap: .55rem; }
+.stats b {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: var(--blue-2);
+  line-height: 1;
+}
+.stats span { color: #cfe3f1; font-size: .98rem; }
+.cnote {
+  font-size: .92rem;
+  color: #c5d6e4;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: .85rem 1.1rem;
+  background: rgba(43,114,158,.12);
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
+}
+.ctas { display: flex; justify-content: center; gap: .75rem; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  font-size: .92rem;
+  letter-spacing: .04em;
+  text-decoration: none;
+  padding: .75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  border: 2px solid var(--blue-2);
+  box-shadow: 0 6px 18px rgba(43,114,158,.35);
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { background: var(--blue-2); transform: translateY(-1px); }
+.btn.ghost {
+  background: transparent;
+  color: #e5eef5;
+  border-color: rgba(159,195,220,.55);
+  box-shadow: none;
+}
+.btn.ghost:hover { background: rgba(52,130,181,.2); }
+
+/* LAYOUT */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1.1rem 4rem;
+  display: grid;
+  gap: 1.25rem;
+}
+.doc {
+  background: var(--paper);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.75rem 1.35rem 2.5rem;
+  min-width: 0;
+}
+
+/* TOC */
+.toc {
+  background: var(--navy);
+  color: #e5eef5;
+  border-radius: 16px;
+  padding: .7rem .8rem .85rem;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 8px 24px rgba(11,18,27,.25);
+}
+.toc-label {
+  display: none;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: .68rem;
+  color: var(--blue-soft);
+  margin: 0 0 .55rem;
+}
+.toc-links {
+  display: flex;
+  gap: .4rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: .15rem;
+}
+.toc-links::-webkit-scrollbar { display: none; }
+.toc-links a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  text-decoration: none;
+  color: #cfe3f1;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 600;
+  font-size: .78rem;
+  padding: .4rem .65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(52,130,181,.35);
+  background: rgba(43,114,158,.12);
+  white-space: nowrap;
+}
+.toc-links a .tn {
+  color: var(--blue-2);
+  font-weight: 800;
+}
+.toc-links a .tt { max-width: 14rem; overflow: hidden; text-overflow: ellipsis; }
+.toc-links a.active,
+.toc-links a:hover {
+  background: var(--blue);
+  border-color: var(--blue-2);
+  color: #fff;
+}
+.toc-links a.active .tn,
+.toc-links a:hover .tn { color: #fff; }
+.toc-pdf {
+  display: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  font-size: .8rem;
+  background: var(--blue);
+  border-radius: 999px;
+  padding: .55rem .9rem;
+  text-align: center;
+  margin-top: .85rem;
+}
+
+/* CONTENTS CARDS */
+.contents { margin-bottom: 2rem; }
+.toc-cards {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: .55rem;
+}
+.toc-cards a {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  text-decoration: none;
+  color: inherit;
+  padding: .75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--wash);
+  transition: border-color .15s, box-shadow .15s;
+}
+.toc-cards a:hover { border-color: var(--blue-2); box-shadow: 0 4px 14px rgba(43,114,158,.12); }
+.toc-cards .tn {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 800;
+  color: var(--blue);
+  font-size: 1.15rem;
+  min-width: 2rem;
+}
+.toc-cards .tt { font-weight: 600; color: var(--navy); }
+.toc-cards small { display: block; font-weight: 400; color: #6c7f90; font-size: .82rem; margin-top: .1rem; }
+
+/* CHAPTERS */
+.chapter { padding-top: .25rem; margin-top: 1.75rem; }
+.chapter + .chapter { border-top: 1px solid var(--line); padding-top: 1.75rem; }
+.chapter-head { margin-bottom: .4rem; }
+.chapter-head .kick { text-align: left; margin: 0 0 .2rem; }
+.chapter-head h2 {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.45rem, 2.8vw, 1.85rem);
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.2;
+}
+.chapter-head .rule {
+  height: 4px;
+  width: 72px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-2), transparent);
+  margin: .7rem 0 1.1rem;
+  border-radius: 2px;
+}
+h3 {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--navy);
+  margin: 1.35rem 0 .4rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .55rem;
+  scroll-margin-top: 5rem;
+}
+h3 .num {
+  display: inline-block;
+  min-width: 2.5rem;
+  color: #fff;
+  background: var(--blue);
+  border-radius: 6px;
+  padding: .15rem .5rem;
+  font-size: .86rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+h3.plain { display: block; margin-top: 1.5rem; }
+h4 {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--navy);
+  margin: 1.2rem 0 .5rem;
+}
+p { margin: 0 0 .7rem; }
+ul {
+  margin: 0 0 .8rem;
+  padding-left: 1.35rem;
+  list-style: none;
+}
+ul li { margin: 0 0 .4rem; position: relative; }
+ul li::before {
+  content: "♠️";
+  position: absolute;
+  left: -1.3rem;
+  font-size: .7rem;
+  top: .2rem;
+}
+ol.toc-cards { list-style: none; }
+.ex {
+  background: var(--ex);
+  border-left: 5px solid var(--blue-2);
+  padding: .8rem 1rem;
+  margin: .8rem 0 1.1rem;
+  color: var(--muted);
+  font-size: .96rem;
+  border-radius: 0 10px 10px 0;
+}
+.ex strong { color: var(--blue); }
+.table-wrap { overflow-x: auto; margin: .8rem 0 1.2rem; border-radius: 10px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+  min-width: 28rem;
+}
+th {
+  background: var(--navy);
+  color: #fff;
+  text-align: left;
+  padding: .7rem .9rem;
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  border-bottom: 3px solid var(--blue);
+}
+td {
+  padding: .65rem .9rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+tbody tr:nth-child(even) td { background: var(--wash); }
+
+/* FOOTER */
+.site-footer {
+  background: var(--navy);
+  color: #b9d3e6;
+  border-top: 4px solid var(--blue);
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: .88rem;
+}
+.site-footer .fc {
+  font-family: Montserrat, Inter, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .04em;
+}
+.site-footer .fc b { color: var(--blue-2); font-weight: 700; }
+.top-link {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.6rem; height: 2.6rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  border: 2px solid var(--blue-2);
+  box-shadow: var(--shadow);
+  font-size: 1.1rem;
+  z-index: 40;
+}
+.top-link { opacity: 0; pointer-events: none; transition: opacity .2s ease, background .15s ease; }
+.top-link.show { opacity: 1; pointer-events: auto; }
+.top-link:hover { background: var(--blue); }
+
+@media (min-width: 980px) {
+  html { scroll-padding-top: 1.25rem; }
+  .layout {
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: start;
+    padding: 2rem 1.4rem 5rem;
+    gap: 1.6rem;
+  }
+  .toc {
+    top: 1.1rem;
+    padding: 1.1rem 1rem 1.15rem;
+    max-height: calc(100vh - 2.2rem);
+    overflow: auto;
+  }
+  .toc-label { display: block; }
+  .toc-links { display: flex; flex-direction: column; overflow: visible; gap: .2rem; }
+  .toc-links a {
+    border-radius: 8px;
+    white-space: normal;
+    padding: .5rem .6rem;
+    border-color: transparent;
+    background: transparent;
+  }
+  .toc-links a .tt { max-width: none; }
+  .toc-pdf { display: block; }
+  .doc { padding: 2.25rem 2.4rem 3rem; }
+  h3 { scroll-margin-top: 1.25rem; }
+  .hero-logo { width: 148px; height: 148px; margin-top: -74px; }
+  .hero-inner { padding-bottom: 3.5rem; }
+}
+
+@media (max-width: 979px) {
+  .toc-links a .tt { display: none; }
+  .toc-links a { padding: .42rem .7rem; font-size: .85rem; }
+  .toc { border-radius: 0 0 14px 14px; margin: -1.25rem -1.1rem 0; }
+}
+@media (max-width: 560px) {
+  .hero-logo { width: 104px; height: 104px; margin-top: -52px; }
+  .stats { gap: 1.4rem; }
+  .stats b { font-size: 1.9rem; }
+  .doc { padding: 1.25rem 1rem 2rem; border-radius: 12px; }
+  table { font-size: .88rem; }
+}
+</style>
+</head>
+<body>
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+  
+<header class="hero">
+  <div class="hero-banner">
+    <img src="bj_banner.jpg" alt="Black Jack Community — banner">
+  </div>
+  <div class="hero-inner">
+    <img class="hero-logo" src="bj_logo.png" width="148" height="148" alt="Black Jack Community logo">
+    <p class="kick">DISCORD / IN GAME</p>
+    <h1><span class="sp">♠️</span> BLACK JACK COMMUNITY <span class="sp">♠️</span></h1>
+    <p class="subtitle">Pravila zajednice i servera</p>
+    <div class="accent" aria-hidden="true"></div>
+    <p class="lede">Ovaj pravilnik uređuje ponašanje u zajednici i igranje na serveru. Obuhvata komunikaciju, vođenje karaktera, državne organizacije, kriminalne aktivnosti i postupanje u posebnim RP situacijama.</p><p class="lede">Prije učestvovanja u situaciji pročitajte pravila koja se odnose na vaš karakter, ulogu i aktivnost. Posebne dozvole primjenjuju se u svom navedenom obimu, uz poštovanje ostalih pravila.</p>
+    <div class="stats"><div><b>08</b> <span>poglavlja</span></div><div><b>70</b> <span>numerisanih pravila</span></div></div>
+    <p class="cnote">Prijave i zahtjevi za odobrenje podnose se putem Discord ticketa. Tokom igre nastavite RP i sačuvajte video dokaz za prijavu, prema pravilima 1.9 i 2.8.</p>
+    <div class="ctas">
+      <a class="btn" href="BlackJack_Pravila.pdf">📄 Preuzmi PDF</a>
+      <a class="btn ghost" href="#sadrzaj">Sadržaj</a>
+    </div>
+  </div>
+</header>
+
+  <div class="layout">
+    <nav class="toc" id="toc" aria-label="Sadržaj poglavlja"><p class="toc-label">Poglavlja</p><div class="toc-links"><a href="#poglavlje-01" data-chapter="01"><span class="tn">01</span><span class="tt">Discord pravila</span></a><a href="#poglavlje-02" data-chapter="02"><span class="tn">02</span><span class="tt">Osnovna roleplay pravila</span></a><a href="#poglavlje-03" data-chapter="03"><span class="tn">03</span><span class="tt">Karakter i trajno brisanje</span></a><a href="#poglavlje-04" data-chapter="04"><span class="tn">04</span><span class="tt">Državne organizacije i safe zone</span></a><a href="#poglavlje-05" data-chapter="05"><span class="tn">05</span><span class="tt">Roleplay s policijom i bolnicom</span></a><a href="#poglavlje-06" data-chapter="06"><span class="tn">06</span><span class="tt">Pljačke</span></a><a href="#poglavlje-07" data-chapter="07"><span class="tn">07</span><span class="tt">Otmice i ostali kriminalni roleplay</span></a><a href="#poglavlje-08" data-chapter="08"><span class="tn">08</span><span class="tt">Posebne situacije i sankcije</span></a></div><a class="toc-pdf" href="BlackJack_Pravila.pdf" download>Preuzmi PDF</a></nav>
+    <main class="doc">
+      <section id="sadrzaj" class="contents"><header class="chapter-head"><p class="kick"><span class="dia">🔹</span> PREGLED</p><h2>Sadržaj i pojmovi</h2><div class="rule"></div></header><ol class="toc-cards"><li><a href="#poglavlje-01"><span class="tn">01</span><span class="tt">Discord pravila<small>Pravila 1.1–1.10</small></span></a></li><li><a href="#poglavlje-02"><span class="tn">02</span><span class="tt">Osnovna roleplay pravila<small>Pravila 2.1–2.8</small></span></a></li><li><a href="#poglavlje-03"><span class="tn">03</span><span class="tt">Karakter i trajno brisanje<small>Pravila 3.1–3.6</small></span></a></li><li><a href="#poglavlje-04"><span class="tn">04</span><span class="tt">Državne organizacije i safe zone<small>Pravila 4.1–4.7</small></span></a></li><li><a href="#poglavlje-05"><span class="tn">05</span><span class="tt">Roleplay s policijom i bolnicom<small>Pravila 5.1–5.11</small></span></a></li><li><a href="#poglavlje-06"><span class="tn">06</span><span class="tt">Pljačke<small>Pravila 6.1–6.11</small></span></a></li><li><a href="#poglavlje-07"><span class="tn">07</span><span class="tt">Otmice i ostali kriminalni roleplay<small>Pravila 7.1–7.7</small></span></a></li><li><a href="#poglavlje-08"><span class="tn">08</span><span class="tt">Posebne situacije i sankcije<small>Pravila 8.1–8.10</small></span></a></li></ol></section>
+<h3 class="plain" id="pojmovi-u-pravilniku">Pojmovi u pravilniku</h3>
+<ul><li><strong>RP</strong> Roleplay, odnosno odigravanje života i postupaka karaktera.</li><li><strong>IC</strong> Komunikacija, događaji i informacije unutar karaktera.</li><li><strong>OOC</strong> Komunikacija i informacije izvan karaktera.</li><li><strong>Perma</strong> Trajna smrt karaktera.</li><li><strong>NPC</strong> Lik kojim ne upravlja igrač; u RP situacijama smatra se građaninom.</li><li><strong>Ticket</strong> Discord zahtjev za pomoć, prijavu ili administrativno odobrenje.</li></ul>
+<section class="chapter" id="poglavlje-01">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 01</p><h2>Discord pravila</h2><div class="rule"></div></header>
+<h3 id="p-1-1"><span class="num">1.1</span> Imena na platformama</h3>
+<p>Zabranjena su Steam i Discord imena koja vrijeđaju na nacionalnoj, vjerskoj ili rasnoj osnovi.</p>
+<h3 id="p-1-2"><span class="num">1.2</span> Odnos prema zajednici</h3>
+<p>Zabranjeni su javno psovanje, prozivanje i iznošenje neistina o Black Jack Community zajednici i serveru.</p>
+<h3 id="p-1-3"><span class="num">1.3</span> Poštovanje članova</h3>
+<p>Zabranjeni su vrijeđanje, maltretiranje, rasizam, seksizam i svaki drugi oblik diskriminacije.</p>
+<h3 id="p-1-4"><span class="num">1.4</span> Privatnost</h3>
+<p>Ne objavljujte niti dijelite privatne informacije drugih članova bez njihovog pristanka. Predstavljanje takvih podataka kao IC sadržaja ne uklanja ovu zabranu.</p>
+<h3 id="p-1-5"><span class="num">1.5</span> Poruke i oglašavanje</h3>
+<p>Zabranjeno je slanje neželjenih poruka i reklama bez odobrenja administracije.</p>
+<h3 id="p-1-6"><span class="num">1.6</span> Namjena kanala</h3>
+<p>Svaki kanal koristite za njegovu namjenu. IC kanali služe za komunikaciju unutar karaktera, a OOC kanali za razgovore izvan karaktera. Oznaka IC ne ukida ostala pravila zajednice.</p>
+<h3 id="p-1-7"><span class="num">1.7</span> Glasovni kanali</h3>
+<p>U glasovnim kanalima ponašajte se pristojno i ne prekidajte druge dok govore.</p>
+<h3 id="p-1-8"><span class="num">1.8</span> Kontakt s administracijom</h3>
+<p>Zabranjeno je masovno označavanje administracije u Discord chatu. Za pomoć i pitanja otvorite Discord ticket.</p>
+<h3 id="p-1-9"><span class="num">1.9</span> Prijave i hitne situacije</h3>
+<p>In Game report koristite samo za hitne situacije. Ostala kršenja prijavite putem Discord ticketa i priložite dokaze. Za prijavu kršenja tokom igre primjenjuje se i pravilo 2.8 o video dokazu i nastavku RP-a.</p>
+<h3 id="p-1-10"><span class="num">1.10</span> Primjedbe na tuđi roleplay</h3>
+<p>Zabranjeni su vrijeđanje i negativno prozivanje drugih igrača i njihovih postupaka u tekstualnim i glasovnim kanalima. Primjedbe na RP ili određenu situaciju iznesite mirno putem ticketa, uz odgovarajuće dokaze.</p>
+</section>
+<section class="chapter" id="poglavlje-02">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 02</p><h2>Osnovna roleplay pravila</h2><div class="rule"></div></header>
+<h3 id="p-2-1"><span class="num">2.1</span> RDM i VDM</h3>
+<p>RDM (Random Deathmatch) je ubijanje ili pokušaj ubijanja bez RP razloga. VDM (Vehicle Deathmatch) je korištenje vozila za ubistvo ili pokušaj ubistva bez RP razloga. Oba postupka su zabranjena. Neuspješan pokušaj, bez povrede ili pogibije, ne uklanja prekršaj.</p>
+<h3 id="p-2-2"><span class="num">2.2</span> Metagaming</h3>
+<p>Zabranjeno je koristiti informacije stečene izvan igre za postupanje karaktera. Ovo uključuje stream sniping i prenošenje OOC informacija putem VOIP aplikacija. Zabranjeno je na osnovu takvog podatka mijenjati plan, birati lokaciju ili pokretati ciljanu IC provjeru.</p>
+<p>Samo primanje OOC informacije nije isto što i njeno korištenje. Nezavisno i valjano IC saznanje može biti osnov za kasnije postupanje, ali naknadna IC potvrda ne briše raniju upotrebu OOC podatka. Prenošenje poznatog OOC podatka kroz IC razgovor ne mijenja njegov izvor.</p>
+<aside class="ex"><strong>Primjena.</strong> Ako zbog Discord upozorenja pošaljete nekoga da provjeri policijsku zasjedu, OOC podatak ste već iskoristili. Ako ne promijenite ponašanje i karakter kasnije nezavisno opazi policiju, smije reagovati na ono što je stvarno vidio.</aside>
+<h3 id="p-2-3"><span class="num">2.3</span> Powergaming</h3>
+<p>Zabranjeno je iskorištavati mehanike igre ili nametati RP mehanike koje ne postoje ili se ne bi mogle dogoditi u stvarnom životu. Komande /me i /do služe odigravanju situacije; ne daju pravo da izmišljate zabranjene predmete, pristupe ili efekte.</p>
+<h3 id="p-2-4"><span class="num">2.4</span> Fear RP</h3>
+<p>Karakter mora pokazivati strah za vlastiti život i ponašati se u skladu s neposrednom opasnošću. Procjenjujte broj i položaj prijetnji, dostupnost oružja, zaklon i stvarnu mogućnost reakcije ili bijega. Sama mehanička vještina igrača ne opravdava zanemarivanje tih okolnosti.</p>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 02</p><h2>Postupanje tokom RP situacije</h2><div class="rule"></div></header>
+<h3 id="p-2-5"><span class="num">2.5</span> RPS</h3>
+<p>RPS (Roleplay Superman) je ponašanje karaktera kao superheroja. Zabranjeno je samostalno napadati kompletnu ekipu. Uspjeh u pucnjavi ne čini prethodno zabranjeno ponašanje dozvoljenim; primjenjuju se i okolnosti iz pravila 2.4.</p>
+<h3 id="p-2-6"><span class="num">2.6</span> Bug abuse i varanje</h3>
+<p>Strogo su zabranjeni glitchovanje, iskorištavanje bugova, hakovanje i korištenje cheatova. Odobrenje za određenu RP priču ili ishod ne ukida ovu zabranu.</p>
+<h3 id="p-2-7"><span class="num">2.7</span> IC i OOC komunikacija</h3>
+<p>Situacije u igri rješavaju se unutar karaktera. OOC razgovor u igri je zabranjen, osim kada vam se obraća član administracije. Zabranjeno je samovoljno i naglo izlaziti iz karaktera. Odgovor administraciji ne daje ostalim učesnicima opštu dozvolu za OOC raspravu.</p>
+<h3 id="p-2-8"><span class="num">2.8</span> Prijava bez prekidanja situacije</h3>
+<p>Ako primijetite da drugi igrač krši pravila, nastavite roleplay, sačuvajte video dokaz i podnesite prijavu putem Discord ticketa. Tuđi prekršaj ne daje pravo da samostalno prekinete situaciju, napustite server ili odlučujete o kazni drugog igrača.</p>
+<p>Nastavak situacije ne znači da prihvatate tuđi postupak kao ispravan niti da gubite pravo na prijavu. Za hitne situacije koristite In Game report prema pravilu 1.9.</p>
+<aside class="ex"><strong>Primjena.</strong> Ako tokom otmice primijetite kršenje pravila, ostanite u karakteru i nastavite prema okolnostima. Snimak i primjedbe dostavite kroz ticket, bez javnog prozivanja učesnika.</aside>
+</section>
+<section class="chapter" id="poglavlje-03">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 03</p><h2>Karakter i trajno brisanje</h2><div class="rule"></div></header>
+<h3 id="p-3-1"><span class="num">3.1</span> Perma i doživotna kazna</h3>
+<p>Nakon trajne smrti karaktera ili doživotne zatvorske kazne morate sačekati 5 dana prije brisanja karaktera i pravljenja novog. Rok važi u oba slučaja, bez obzira na to da li je prethodni karakter mrtav ili ostaje u zatvoru.</p>
+<h3 id="p-3-2"><span class="num">3.2</span> Odvajanje karaktera</h3>
+<p>Strogo je zabranjeno povezivati priču novog i starog karaktera. Ne ostavljajte imovinu prijateljima ili poznanicima kako bi je kasnije koristio vaš novi karakter. Novo ime ili drugačije objašnjenje prijenosa ne uklanjaju ovu zabranu.</p>
+<h3 id="p-3-3"><span class="num">3.3</span> Testament i prijenos imovine</h3>
+<p>Prije perme ili doživotne zatvorske kazne zabranjeno je pisati testament ili na bilo koji način prepisivati ličnu imovinu drugim karakterima, zbog narušavanja ekonomije servera. Zabrana je zasebna od zabrane čuvanja imovine za novi karakter.</p>
+<h3 id="p-3-4"><span class="num">3.4</span> Namjerno izazivanje vlastite perme</h3>
+<p>Zabranjeno je namjerno uništavati vlastiti karakter radi izazivanja njegove perme. Zabrana važi i kada svjesno izazivate postupke drugih karaktera kako biste na taj način završili vlastitu priču.</p>
+<h3 id="p-3-5"><span class="num">3.5</span> Uslovi za zahtjev za novi karakter</h3>
+<p>Za traženje odobrenja administracije za brisanje trenutnog i pravljenje novog karaktera morate zajedno ispuniti sve sljedeće uslove:</p>
+<ul><li>Najmanje 120 sati igre na trenutnom karakteru.</li><li>Svi računi moraju biti plaćeni.</li><li>Bez neriješenih konflikata, dugovanja drugim igračima ili obaveza koje bi mogle ugroziti druge karaktere.</li><li>Bez otvorenog kriminalnog RP-a s policijom.</li></ul>
+<p>Ispunjavanje uslova omogućava podnošenje zahtjeva; nije automatsko odobrenje za brisanje. Puštanje iz pritvora samo po sebi ne znači da je kriminalni RP završen.</p>
+<h3 id="p-3-6"><span class="num">3.6</span> Perma drugog karaktera</h3>
+<p>Za trajno usmrćivanje karaktera drugog igrača otvorite Discord ticket, priložite valjan dokaz za zahtjev i sačekajte odobrenje administracije prije sprovođenja perme. Poslan zahtjev nije odobrenje.</p>
+</section>
+<section class="chapter" id="poglavlje-04">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 04</p><h2>Državne organizacije i safe zone</h2><div class="rule"></div></header>
+<h3 id="p-4-1"><span class="num">4.1</span> Zaštićeni prostori</h3>
+<p>Safe zona je prostor zaštićen od kriminalnih radnji. Obuhvata prostore državnih organizacija i mjesta na kojima pristupate izborniku, poput banaka, trgovina i butika. Ograničenja konkretnih aktivnosti čitajte zajedno s pravilima poglavlja 06.</p>
+<h3 id="p-4-2"><span class="num">4.2</span> Nastavak postojeće situacije</h3>
+<p>RP započet izvan safe zone može se nastaviti unutar nje uz dovoljan RP razlog i odgovarajući način izvođenja. Ulazak u safe zonu ne prekida automatski postojeću situaciju. Stari dug ili neprijateljstvo sami po sebi nisu dokaz da je konkretna radnja već započela izvan zone.</p>
+<p>Izuzetak za nastavak konkretne situacije ne predstavlja opštu dozvolu za započinjanje novih, nepovezanih kriminalnih radnji prema drugim prisutnim osobama.</p>
+<h3 id="p-4-3"><span class="num">4.3</span> Predstavljanje kao službeno lice</h3>
+<p>Dozvoljeno je glumiti službena lica, uključujući policiju, sudstvo, bolnicu, Sheriff i Weazel News. Ova dozvola ne ukida pravila o vozilima, safe zonama, otmicama i ostalim postupcima.</p>
+<h3 id="p-4-4"><span class="num">4.4</span> Krađa službenih vozila</h3>
+<p>Krađa službenih vozila je zabranjena. Zabrana se odnosi i na službena vozila u kojima se nalaze NPC lica, uz izuzetak naveden u pravilu 4.5.</p>
+<h3 id="p-4-5"><span class="num">4.5</span> Izuzetak za policiju i bolnicu</h3>
+<p>Vozila policije i bolnice mogu se ukrasti uz poseban i odgovarajući roleplay. Izuzetak se ne prenosi na vozila ostalih službi i ne daje dozvolu za druge zabranjene radnje prema osoblju.</p>
+<h3 id="p-4-6"><span class="num">4.6</span> Cop baiting</h3>
+<p>Zabranjeno je namjerno izazivanje policije radi iznuđivanja reakcije ili potjere. Zabrana važi u svim oblicima kriminala, uključujući dilanje, krađu vozila, pljačku igrača, banaka i zlatare. Kriminalni izgovor ne uklanja cop baiting kada je stvarni cilj postupka provociranje policije.</p>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 04</p><h2>Kriminal u državnim organizacijama</h2><div class="rule"></div></header>
+<h3 id="p-4-7"><span class="num">4.7</span> Pravila prema ulozi</h3>
+<p>Dozvoljenost kriminalnog učešća određuje se prema sljedećoj tabeli. IC povezanost s kriminalom i upotreba OOC informacija različita su pitanja; dozvola za jedno ne ukida ostala RP pravila.</p>
+<div class="table-wrap"><table><thead><tr><th>Uloga ili organizacija</th><th>Pravilo</th></tr></thead><tbody><tr><td>Policija i Sheriff</td><td>Kriminalne aktivnosti su zabranjene. Izuzetak je moguć uz RP ideju predstavljenu administraciji putem ticketa i njeno prethodno odobrenje.</td></tr><tr><td>Sudija</td><td>Ne smije učestvovati u kriminalu niti biti povezan s njim.</td></tr><tr><td>Tužilac</td><td>Ne smije učestvovati u kriminalu niti biti povezan s njim.</td></tr><tr><td>Advokat</td><td>Smije direktno učestvovati u kriminalu.</td></tr><tr><td>Zaposleni u bolnici</td><td>Smiju učestvovati u kriminalu.</td></tr></tbody></table></div>
+<p>Odobreni izuzetak za policiju ili Sheriff odnosi se na konkretnu odobrenu RP ideju. Ne prenosi se automatski na druge učesnike, profesije ili nove situacije.</p>
+<aside class="ex"><strong>Primjena.</strong> Tužilac koji svjesno pomaže mafiji povjerljivim IC informacijama povezan je s kriminalom i kada ne učestvuje u pljački i ne prima novac. Advokatu sama takva kriminalna povezanost nije zabranjena pravilom njegove profesije.</aside>
+<p>Dozvola zaposlenima u bolnici da učestvuju u kriminalu ne ukida zaštitu medicinskog osoblja na dužnosti iz pravila 5.9 niti zabrane povezane s njihovim stvarima i opremom.</p>
+</section>
+<section class="chapter" id="poglavlje-05">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 05</p><h2>Roleplay s policijom</h2><div class="rule"></div></header>
+<h3 id="p-5-1"><span class="num">5.1</span> Uzimanje stvari policijskim službenicima</h3>
+<p>Od policijskih službenika smijete uzimati stvari uz odgovarajući Fear RP. Procijenite stvarnu kontrolu situacije i neposrednu opasnost te poštujte ostala osnovna RP pravila.</p>
+<h3 id="p-5-2"><span class="num">5.2</span> Prvo otvaranje vatre</h3>
+<p>Policiji je zabranjeno da prva otvori vatru. Izuzetak je pucanje radi bušenja guma ili pucanje u pod, i to samo kada je ugrožen život drugih građana ili službenih lica. Sam bijeg ili neposlušnost ne predstavljaju automatski ispunjen uslov tog izuzetka.</p>
+<h3 id="p-5-3"><span class="num">5.3</span> NPC građani</h3>
+<p>NPC lica smatraju se građanima i u RP situacijama vrijede kao pravi igrači. Njihova ugroženost ili uloga ne smije se zanemariti samo zato što ih ne kontroliše igrač.</p>
+<h3 id="p-5-4"><span class="num">5.4</span> Otmica službenika na dužnosti</h3>
+<p>Dozvoljeno je oteti policijske službenike na dužnosti uz poštovanje Fear RP-a, okolnosti i ostalih pravila otmice. Zaštita medicinskog osoblja na dužnosti ne prenosi se automatski na policiju.</p>
+<h3 id="p-5-5"><span class="num">5.5</span> Pritvor</h3>
+<p>Policija vas može zadržati u pritvoru do 24 sata OOC vremena. Ovo ograničenje ne važi ako izbjegavate RP s policijom. Samo postojanje nezavršene istrage nije navedeno kao izuzetak od ograničenja.</p>
+<aside class="ex"><strong>Primjena.</strong> Ako sarađujete u RP-u, raniji IC pokušaj bijega sam po sebi nije dokaz izbjegavanja roleplaya. Istek pritvora, s druge strane, ne znači automatski završetak otvorene kriminalne priče.</aside>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 05</p><h2>Roleplay s bolnicom</h2><div class="rule"></div></header>
+<h3 id="p-5-6"><span class="num">5.6</span> Odigravanje povreda</h3>
+<p>Stepen i prirodu povreda odigrajte pomoću /me i /do komandi. Ponašanje karaktera uskladite s opisanim stanjem; tehnička mogućnost određene radnje nije sama po sebi opravdanje za zanemarivanje povrede.</p>
+<h3 id="p-5-7"><span class="num">5.7</span> Potvrda smrti nakon perme</h3>
+<p>Nakon perme karaktera, po dolasku bolničara potvrdite smrt pomoću /me i /do komandi. Primjer: /do Ne bi bilo pulsa. Mogućnost liječenja koju nudi skripta ne poništava provedenu permu.</p>
+<h3 id="p-5-8"><span class="num">5.8</span> Kretanje pri smanjenom zdravlju</h3>
+<p>Kada je zdravlje karaktera ispod 50%, uskladite kretanje s njegovim stanjem. Opisivanje povrede komandama ne zamjenjuje ovu obavezu. Pravilo ne propisuje automatski prekid svakog razgovora ili drugog učešća u situaciji.</p>
+<h3 id="p-5-9"><span class="num">5.9</span> Zaštita osoblja na dužnosti</h3>
+<p>Zabranjeno je otimati medicinsko osoblje dok je na dužnosti. Opravdan kriminalni motiv i odluka da osoblju ne uzimate opremu ne uklanjaju zabranu otmice.</p>
+<h3 id="p-5-10"><span class="num">5.10</span> Stvari bolničara</h3>
+<p>Zabranjeno je uzimati stvari od bolničara. Dozvola za uzimanje stvari policijskim službenicima ne primjenjuje se na medicinsko osoblje.</p>
+<h3 id="p-5-11"><span class="num">5.11</span> Medicinska oprema</h3>
+<p>Bolničari ne smiju davati igračima medicinsku opremu, poput medkitova i zavoja. Zabrana obuhvata i dobrovoljno davanje opreme nakon uredno završenog liječenja.</p>
+<aside class="ex"><strong>Primjena.</strong> Bolničar koji nakon liječenja pokloni medkit za buduće sukobe krši pravilo 5.11 i kada nije bilo prijetnje, pljačke ili plaćanja.</aside>
+</section>
+<section class="chapter" id="poglavlje-06">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 06</p><h2>Pljačka glavne banke i zlatare</h2><div class="rule"></div></header>
+<div class="table-wrap"><table><thead><tr><th>Uslov</th><th>Glavna banka</th><th>Zlatara</th></tr></thead><tbody><tr><td>Najviše pljačkaša</td><td>8 (5 + 3)</td><td>4 (3 + 1)</td></tr><tr><td>Najmanje talaca</td><td>1</td><td>1</td></tr><tr><td>Najviše talaca ukupno</td><td>Bez ograničenja</td><td>Bez ograničenja</td></tr><tr><td>Najviše talaca izvan objekta</td><td>1</td><td>1</td></tr></tbody></table></div>
+<h3 id="p-6-1"><span class="num">6.1</span> Druge kriminalne radnje</h3>
+<p>Tokom pljačke glavne banke ili zlatare zabranjen je bilo koji drugi oblik kriminalnih radnji. Zabrana nije ograničena samo na pripadnike ekipe koja izvodi pljačku.</p>
+<h3 id="p-6-2"><span class="num">6.2</span> Unaprijed dogovoreni taoci</h3>
+<p>Zabranjeni su fake taoci koji po prethodnom dogovoru dolaze na određenu pljačku. Samo poznanstvo s taocem nije dokaz dogovora. Uvjerljivo odigravanje, vezivanje ili rizik gubitka stvari ne uklanjaju već postojeći dogovor.</p>
+<h3 id="p-6-3"><span class="num">6.3</span> Prohodnost ulaza</h3>
+<p>Zabranjeno je vozilima blokirati ulaz u glavnu banku ili zlataru. Kasnije uklanjanje vozila ne znači da prethodne blokade nije bilo.</p>
+<h3 id="p-6-4"><span class="num">6.4</span> Stvarno postojanje taoca</h3>
+<p>Zabranjeno je odigravati da imate taoca kojeg nemate, bilo unutar ili izvan objekta. Nakon oslobađanja osobe ne smijete nastaviti predstavljati da je i dalje držite kao taoca.</p>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 06</p><h2>Prodavnica bankomat i učešće</h2><div class="rule"></div></header>
+<h3 id="p-6-5"><span class="num">6.5</span> Broj pljačkaša prodavnice</h3>
+<p>U pljački prodavnice ili trgovine mogu učestvovati najviše 2 pljačkaša. Limit se odnosi na učesnike aktivnosti, a ne samo na osobe koje uđu u objekat ili uzmu novac.</p>
+<h3 id="p-6-6"><span class="num">6.6</span> Dogovoreni talac u prodavnici</h3>
+<p>Zabranjeno je koristiti unaprijed dogovorenog, odnosno fake taoca. Dogovoreni dolazak u ulozi taoca ostaje zabranjen i kada ostatak situacije nije unaprijed određen.</p>
+<h3 id="p-6-7"><span class="num">6.7</span> Ulaz u prodavnicu</h3>
+<p>Zabranjeno je vozilom blokirati ulaz u prodavnicu. Zabrana ne zavisi od toga da li je policija već stigla ili koliko je blokada trajala.</p>
+<h3 id="p-6-8"><span class="num">6.8</span> Nepostojeći talac u prodavnici</h3>
+<p>Zabranjeno je roleplayati postojanje taoca kojeg nemate, bilo unutar ili izvan objekta. Tvrdnja o praznom gepeku, prostoriji ili drugoj lokaciji ne postaje dozvoljena zato što je dio pregovaračkog blefa.</p>
+<h3 id="p-6-9"><span class="num">6.9</span> Nepostojeći talac kod bankomata</h3>
+<p>Pri pljački bankomata zabranjeno je odigravati postojanje taoca kojeg nemate.</p>
+<h3 id="p-6-10"><span class="num">6.10</span> Broj učesnika i talaca</h3>
+<p>Pri pljački glavne banke i zlatare poštujte granice iz tabele u odjeljku Pljačka glavne banke i zlatare. Ograničenje ukupnog broja talaca i ograničenje talaca izvan objekta primjenjuju se odvojeno.</p>
+<h3 id="p-6-11"><span class="num">6.11</span> Aktivno učešće i podrška</h3>
+<p>U broj učesnika ulaze osobe koje aktivno obavljaju zadatke istog pljačkaškog plana, uključujući dogovoren nadzor, dojave i pomoć pri bijegu. Odsustvo iz objekta, nenaoružanost ili neuzimanje dijela plijena ne isključuju takvo učešće.</p>
+<p>Osoba koja se naknadno aktivno uključi takođe se računa. Samo članstvo u istoj organizaciji, vlasništvo nad korištenim predmetom ili kasnija nepovezana usluga nisu sami po sebi dokaz učešća u pljački.</p>
+</section>
+<section class="chapter" id="poglavlje-07">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 07</p><h2>Otmice i otkup</h2><div class="rule"></div></header>
+<h3 id="p-7-1"><span class="num">7.1</span> Učestalost otmica</h3>
+<p>Istog igrača smijete oteti samo jednom u toku dana. Oslobađanje taoca ili novi RP razlog ne resetuju ovo ograničenje.</p>
+<h3 id="p-7-2"><span class="num">7.2</span> Zadržavanje otete osobe</h3>
+<p>Osobu otetu iz RP razloga smijete zadržati do 24 sata. Zabranjeno je iskorištavati ovo ograničenje tako što ne ulazite na server kako bi vrijeme samo isteklo i kako biste izbjegli nastavak situacije.</p>
+<h4>Maksimalni otkup prema pravilu 7.7</h4>
+<div class="table-wrap"><table><thead><tr><th>Oteta osoba</th><th>Maksimalan otkup</th></tr></thead><tbody><tr><td>Ostali igrači</td><td>10.000</td></tr><tr><td>Sudija</td><td>50.000</td></tr><tr><td>Tužilac</td><td>30.000</td></tr><tr><td>Načelnik policije</td><td>30.000</td></tr></tbody></table></div>
+<p>Bogatstvo, veličina organizacije ili sličnost s navedenom funkcijom ne daju poseban viši limit. Za osobu koja nije u izdvojenoj kategoriji primjenjuje se maksimum za ostale igrače.</p>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 07</p><h2>Imovina organizacije i oružje</h2><div class="rule"></div></header>
+<h3 id="p-7-3"><span class="num">7.3</span> Dokumenti i bankovna kartica</h3>
+<p>Zabranjeno je krasti dokumente drugih igrača. Krađa bankovne kartice je dozvoljena. Dozvola za karticu ne daje pravo da izmišljate PIN, pristup računu ili druge podatke i mehanike bez odgovarajućeg IC osnova.</p>
+<h3 id="p-7-4"><span class="num">7.4</span> Transport novca</h3>
+<p>Pri transportu novca smijete, uz odgovarajući roleplay, zaustaviti konvoj i uzeti puni iznos novca. Ova dozvola ne ukida zabranu krađe dokumenata niti ostala pravila situacije.</p>
+<h3 id="p-7-5"><span class="num">7.5</span> Broj članova organizacije</h3>
+<p>Mafije i bande nemaju ograničenje broja članova. To ne mijenja limite učesnika pojedinačnih aktivnosti, uključujući pljačke glavne banke, zlatare i prodavnice.</p>
+<h3 id="p-7-6"><span class="num">7.6</span> Vađenje oružja</h3>
+<p>Vađenje oružja morate roleplayati pomoću /me i /do komandi. Izuzetak je oružje malog kalibra. Animacija inventara ili vidljivo oružje sami po sebi nisu navedeni kao zamjena za komande kada je njihova upotreba obavezna.</p>
+<h3 id="p-7-7"><span class="num">7.7</span> Maksimalni otkup</h3>
+<p>Za oslobađanje otete osobe ne smijete zahtijevati iznos veći od odgovarajućeg maksimuma iz tabele. Obavezne dodatne naknade koje uslovljavaju oslobađanje dio su ukupno traženog otkupa, bez obzira na naziv uplate ili osobu koja je plaća.</p>
+<aside class="ex"><strong>Primjena.</strong> Mafija s dvadeset članova smije postojati, ali zbog toga ne smije poslati šest aktivnih učesnika na pljačku prodavnice. Primjenjuje se limit od najviše dva pljačkaša.</aside>
+</section>
+<section class="chapter" id="poglavlje-08">
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 08</p><h2>NLR i tehnički prekidi</h2><div class="rule"></div></header>
+<h3 id="p-8-1"><span class="num">8.1</span> NLR i gubitak sjećanja</h3>
+<p>NLR (New Life Rule) podrazumijeva gubitak sjećanja na posljednjih 30 minuta RP-a. Primjenjuje se samo nakon pada s velike visine, teške saobraćajne nesreće, snažnog udarca velikim predmetom u glavu ili sličnih situacija. Svako ranjavanje, obaranje ili liječenje ne aktivira ga automatski.</p>
+<p>Ranija sjećanja izvan izgubljenog perioda ne brišu se samo zato što su povezana s istom osobom ili pričom. Podatak kasnije ponovo stečen valjanim IC putem može biti novo saznanje; on ne vraća automatski vlastito sjećanje na izgubljeni događaj.</p>
+<aside class="ex"><strong>Primjena.</strong> Nesreća se dogodi u 21:00. Podatak prvi put saznan u 20:45 ulazi u izgubljenih 30 minuta, dok podatak saznan u 20:10 ostaje izvan tog perioda. OOC pregled snimka ne smije se koristiti za vraćanje izgubljenog znanja.</aside>
+<h3 id="p-8-2"><span class="num">8.2</span> Namjerno izazivanje NLR</h3>
+<p>Zabranjeno je namjerno pucati karakteru u glavu ili ga drugim postupkom prisiljavati na NLR radi koristi u vlastitom RP-u. Postojanje povrede koja može izazvati NLR ne daje pravo da je koristite za brisanje svjedokovog sjećanja.</p>
+<h3 id="p-8-3"><span class="num">8.3</span> LTA</h3>
+<p>LTA (Leave to Avoid) je napuštanje servera radi izbjegavanja RP-a ili određene situacije i strogo je zabranjen. Tuđi prekršaj ili namjera da kasnije tražite novi karakter ne opravdavaju takav izlazak.</p>
+<h3 id="p-8-4"><span class="num">8.4</span> Crash i povratak</h3>
+<p>Ako vam se igra crasha tokom situacije, javite na Discordu da je došlo do crasha i da se vraćate u RP. Vratite se čim možete i nastavite istu situaciju. Stvarni crash nije automatski LTA, ali ne opravdava kasniju namjernu odluku da izbjegnete nastavak.</p>
+<header class="chapter-head"><p class="kick"><span class="dia">🔹</span> POGLAVLJE 08</p><h2>Posebni RP i sankcije</h2><div class="rule"></div></header>
+<h3 id="p-8-5"><span class="num">8.5</span> Suicide roleplay</h3>
+<p>Odigravanje samoubistva je zabranjeno. Izuzeci za odigravanje samoubice ili teroriste mogući su samo uz prethodno odobrenje administracije. Otvorite zahtjev i sačekajte odobrenje prije situacije. Samo slanje ticketa i saglasnost drugih učesnika nisu odobrenje.</p>
+<h3 id="p-8-6"><span class="num">8.6</span> RPT</h3>
+<p>RPT (Roleplay Torture) u obliku odsijecanja dijelova tijela drugih karaktera strogo je zabranjen.</p>
+<h3 id="p-8-7"><span class="num">8.7</span> Seksualno nasilje</h3>
+<p>Zabranjen je svaki oblik seksualnog nasilja i prisiljavanja na njega.</p>
+<h3 id="p-8-8"><span class="num">8.8</span> Sredstva za brisanje sjećanja</h3>
+<p>Pilule za zaborav, vakcine i serumi za brisanje sjećanja ne postoje u RP svijetu servera i zabranjeni su. Detaljan opis kroz /me i /do ili animacija ne čine takvo sredstvo dozvoljenim.</p>
+<h3 id="p-8-9"><span class="num">8.9</span> Sankcije</h3>
+<p>Za kršenje pravilnika ban se dodjeljuje po procjeni administracije. Trajanje se određuje prema težini prekršenog pravila. Ovaj pravilnik ne propisuje fiksno trajanje bana za svaki naziv prekršaja.</p>
+<h3 class="plain" id="prava-na-dokument">Prava na dokument</h3>
+<p>© 2026 Black Jack Community. Sva prava na tekst, oblikovanje i originalne vizuelne elemente ovog dokumenta zadržava Black Jack Community, u obimu u kojem na njima ima prava. Prava na tuđe nazive i sadržaje pripadaju njihovim nosiocima.</p>
+</section>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <span>© 2026 Black Jack Community</span>
+    <span class="fc">♠️ <b>Black Jack Community</b> ♠️</span>
+  </footer>
+  <a class="top-link" href="#" title="Nazad na vrh" aria-label="Nazad na vrh">↑</a>
+  <script>
+(function () {
+  const links = Array.from(document.querySelectorAll(".toc-links a[data-chapter]"));
+  const sections = links
+    .map((a) => document.getElementById("poglavlje-" + a.dataset.chapter))
+    .filter(Boolean);
+  if (!links.length || !("IntersectionObserver" in window)) return;
+  const map = new Map();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => map.set(e.target.id, e.isIntersecting || e.intersectionRatio > 0));
+    let active = null;
+    for (const sec of sections) {
+      if (map.get(sec.id)) { active = sec.id; break; }
+    }
+    if (!active) return;
+    links.forEach((a) => {
+      a.classList.toggle("active", "poglavlje-" + a.dataset.chapter === active);
+    });
+  }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 0.1, 0.25] });
+  sections.forEach((s) => io.observe(s));
+  const top = document.querySelector(".top-link");
+  if (top) {
+    const sync = () => top.classList.toggle("show", window.scrollY > 480);
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
+  }
+})();
+</script>
+</body>
+</html>
